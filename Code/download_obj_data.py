@@ -90,7 +90,7 @@ with open('ESO_Red.csv','rb') as csvfile:
                     print 'The URL is',url
 
                     print "Downloading ASCII file using urllib."
-                    urllib.urlretrieve(url, 'data/' + current_coords[0]+".ascii")
+                    urllib.urlretrieve(url, 'G:/Star-Galaxy/Data/' + current_coords[0]+".ascii")
                     print "Download complete."
                 
                 #WHEN THE ASCII CATALOG IS COMPRESSED
@@ -118,7 +118,7 @@ with open('ESO_Red.csv','rb') as csvfile:
                     print 'The URL is',url
 
                     print "Downloading .gz file using urllib."
-                    urllib.urlretrieve(url, 'data/' + current_coords[0]+".ascii.gz")
+                    urllib.urlretrieve(url, 'G:/Star-Galaxy/Data/' + current_coords[0]+".ascii.gz")
                     print "Download complete."
 
                 

@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Feb 10 20:49:48 2016
+Created on Tue May 03 22:05:44 2016
 
-@author: suryo
+@author 1: Suryo
+
+@author 2: Manikandan
 """
 
 import numpy as np
@@ -12,7 +14,7 @@ import urllib
 
 def coord_subset(low, high, coord,name):
 
-    path = '/home/suryo/MyStuff/MyDevelopment/AstroSSDS/code/coordinates/passbands/'
+    path = 'G:/Star-Galaxy/Data/primary_survey/'
     outfile = path + name + '.csv' 
     name_coord = []
     count = 0
@@ -57,7 +59,7 @@ def coord_subset(low, high, coord,name):
             
 coord = []
 count = 0
-with open("/home/suryo/MyStuff/MyDevelopment/AstroSSDS/code/coordinates/coordinates.csv",'rb') as csvfile:
+with open("G:/Star-Galaxy/Data/coordinates.csv",'rb') as csvfile:
     reader = csv.reader(csvfile,delimiter=',')
     for row in reader:
         count+=1
@@ -74,7 +76,7 @@ coord_subset(2,90,coord,'POSS_2_Infrared')
 
 count = 0
 coordinates = []
-with open('/home/suryo/MyStuff/MyDevelopment/AstroSSDS/code/coordinates/passbands/POSS_2_Infrared.csv','rb') as csvfile:
+with open('G:/Star-Galaxy/Data/primary_survey/POSS_2_Infrared.csv','rb') as csvfile:
     reader = csv.reader(csvfile,delimiter=',')
     for row in reader:
         coordinates.append(row)
